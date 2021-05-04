@@ -5,6 +5,19 @@ public class Contact {
 	private String lastName;
 	private String email;
 	private String phoneNumber;
+	// this has nothing to do with this class, just demo purposes
+	public static final int NUMBER = 111111;
+	
+	public Contact() {
+		super();
+	}
+
+	public Contact(String fn, String ln, String e, String pn) {
+		firstName = fn;
+		lastName = ln;
+		email = e;
+		phoneNumber = pn;
+	}
 	
 	// getters and setters - right click - source - generate getters/setters
 	public String getFirstName() {

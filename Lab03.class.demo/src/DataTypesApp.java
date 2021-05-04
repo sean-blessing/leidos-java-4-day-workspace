@@ -34,6 +34,10 @@ public class DataTypesApp {
 		String fullName = firstName+" "+middleName+" "+lastName;
 		System.out.println(fullName);
 		
+		//Math.max Math.min demo
+		System.out.println(Math.max(15, 22));
+		System.out.println(Math.min(122, 145));
+		
 		System.out.println("Bye");
 
 	}

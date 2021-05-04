@@ -5,6 +5,27 @@ public class Movie {
 	private int year;
 	private String rating;
 	private String director;
+	
+	public Movie() {
+		super();
+	}
+	
+	// constructor accepting all fields except id
+	public Movie(int id, String title, int year, String rating, String director) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.year = year;
+		this.rating = rating;
+		this.director = director;
+	}
+	public Movie(String title, int year, String rating, String director) {
+		super();
+		this.title = title;
+		this.year = year;
+		this.rating = rating;
+		this.director = director;
+	}
 	public int getId() {
 		return id;
 	}
@@ -35,10 +56,11 @@ public class Movie {
 	public void setDirector(String director) {
 		this.director = director;
 	}
+	
 	@Override
 	public String toString() {
-		return "A Movie was instantiated:  (" + title + ") "+
-			   "is rated"+rating+" and  id directed by "+
+		return "A Movie was instantiated:  "+title+"(" + year + ") "+
+			   "is rated "+rating+" and is directed by "+
 			   director + ".";
 	}
 	
