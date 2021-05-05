@@ -15,12 +15,12 @@ public class ControlFlowApp {
 			int nbr = sc.nextInt();
 			
 			// even - odd check
-			if (nbr % 2 == 0) {
+			// Note the absence of curly braces... they 
+			// are optional with one statement
+			if (nbr % 2 == 0) 
 				System.out.println(nbr+" is even!");
-			}
-			else {
+			else 
 				System.out.println(nbr+" is odd!");
-			}
 			
 			// check nbr as a grade (0% - 100%)
 			if (nbr > 100) {
@@ -85,6 +85,7 @@ public class ControlFlowApp {
 			System.out.print("Continue? ");
 			choice = sc.next();
 		}
+		
 		
 		sc.close();
 		System.out.println("Bye");
