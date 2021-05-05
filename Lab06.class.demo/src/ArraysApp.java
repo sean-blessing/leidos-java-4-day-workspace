@@ -27,7 +27,10 @@ public class ArraysApp {
 		Contact c2 = new Contact("Ann", "Brown", "ann@test.com", "333-333-3333");
 		Contact c3 = new Contact("Jim", "George", "jim@test.com", "777-777-7777");
 
-		Contact[] contacts = {c1, c2, c3};
+		Contact[] contacts = new Contact[5];
+		contacts[0] = c1;
+		contacts[1] = c2;
+		contacts[2] = c3;
 		
 		// print the fname of the contact in 1st idx position
 		System.out.println(contacts[1].getFirstName());
