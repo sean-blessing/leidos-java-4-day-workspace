@@ -18,6 +18,7 @@ public class DesktopManagerApp {
 		System.out.println("Get a single desktop:");
 		System.out.println(dao.getDesktop());
 		
+		//DesktopDAO dao2 = new DesktopDAO();  <-- can't instantiate an interface
 		
 		System.out.println("bye");
 	}
